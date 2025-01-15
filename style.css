@@ -1,4 +1,4 @@
-#mi-foto{
+#mi-foto , .vp-img{
     height: 220px;
     width: 220px;
 }
@@ -6,4 +6,13 @@
 .logos{
     height: 150px;
     width: 150px;
+}
+
+.proyecto{
+    width: 50%;
+    margin-left: 24%;
+}
+
+.subtitulo{
+    margin-top: 100px;
 }
