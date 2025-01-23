@@ -1,3 +1,14 @@
+header{
+    margin-top: 50px;
+}
+
+header, .lista{
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 #mi-foto , .vp-img{
     height: 220px;
     width: 220px;
@@ -13,6 +24,14 @@
     margin-left: 24%;
 }
 
-.subtitulo{
+.subtitulo, footer{
     margin-top: 50px;
+}
+
+footer{
+    margin-bottom: 0;
+}
+
+#parrafo-final{
+    font-size: small;
 }
