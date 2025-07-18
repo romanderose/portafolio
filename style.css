@@ -9,14 +9,13 @@ header, .lista{
     padding-bottom: 10px;
 }
 
-#mi-foto , .vp-img{
+#mi-foto , .logo, .vp-img{
     height: 220px;
     width: 220px;
 }
 
-.logos{
-    height: 150px;
-    width: 150px;
+#tec-desarrollo{
+    display: grid;
 }
 
 .proyecto{
