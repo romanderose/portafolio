@@ -9,10 +9,39 @@ header, .lista{
     padding-bottom: 10px;
 }
 
-#mi-foto , .logo, .vp-img{
+#mi-foto , .vp-img{
     height: 220px;
     width: 220px;
 }
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Por defecto: 1 por fila */
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  justify-items: center;
+}
+
+.logo {
+  width: 130px;
+  height: 130px;
+}
+
+/* Tablet: 2 por fila */
+@media (min-width: 600px) {
+  .logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Escritorio: 3 por fila */
+@media (min-width: 900px) {
+  .logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 
 #tec-desarrollo{
     display: grid;
@@ -35,4 +64,25 @@ footer{
     font-size: small;
 }
 
-/*---*/
+svg{
+    width: 30px;
+    height: 30px;
+}
+
+.bi-facebook{
+    background-color: white;
+    border-radius: 15px;
+    fill: blue;
+}
+
+#contacto{
+    margin-left: 25%;
+}
+
+#medios-contacto{
+    text-align: start;
+}
+
+.contacto-item{
+    margin-top: 10px;
+}
