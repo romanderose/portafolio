@@ -16,35 +16,14 @@ header, .lista{
 
 .logos {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Por defecto: 1 por fila */
-  gap: 1rem;
   list-style: none;
-  padding: 0;
+  gap: 1rem;
   justify-items: center;
 }
 
 .logo {
   width: 130px;
   height: 130px;
-}
-
-/* Tablet: 2 por fila */
-@media (min-width: 600px) {
-  .logos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Escritorio: 3 por fila */
-@media (min-width: 900px) {
-  .logos {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-
-#tec-desarrollo{
-    display: grid;
 }
 
 .proyecto{
@@ -75,14 +54,18 @@ svg{
     fill: blue;
 }
 
-#contacto{
-    margin-left: 200px;
-}
-
-#medios-contacto{
-    text-align: start;
-}
-
 .contacto-item{
     margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+  .logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
