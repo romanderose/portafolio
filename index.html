@@ -1,266 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Román De Rose: Portafolio</title>
 </head>
-<body class="bg-primary">
 
-    <!-- CABECERA -->
+<body>
 
-    <header class="text-center bg-info">
-
-        <img id="mi-foto" class="rounded-circle border border-dark border-2"
-        src="./imagenes/mi-foto.jpg" alt="Foto de Román De Rose">
-
+    <header class="text-center">
+        <img id="mi-foto" class="rounded-circle" src="./imagenes/mi-foto.jpg" alt="Foto de Román De Rose">
         <h1 class="mt-4 text-uppercase">Román De Rose</h1>
-        
     </header>
 
-    <!-- CUERPO DEL SITIO -->
+    <main class="container py-5">
 
-    <main class="lead">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
 
-        <div class="text-center">
+                <section>
+                    <h2 class="subtitulo fs-3 text-center">Formación Académica</h2>
+                    <p class="text-center text-secondary">UTN Centro de E-learning, CABA</p>
+                    <ul class="lista list-unstyled">
+                        <li><strong>Jun – Dic 2022:</strong> Experto Universitario en Seguridad de la Información (Nota: Muy Bueno)</li>
+                        <li><strong>Jul – Sep 2023:</strong> Desarrollo Web con JavaScript (Nota: Sobresaliente)</li>
+                        <li><strong>Ago – Oct 2023:</strong> Módulo Complementario: Experto Universitario en Ethical Hacking (Nota: Sobresaliente)</li>
+                        <li><strong>Sep – Nov 2023:</strong> Desarrollo Web con HTML5, CSS3 y JavaScript (Avanzado) (Nota: Excelente)</li>
+                        <li><strong>Nov – Dic 2023:</strong> Desarrollo Web con Bootstrap (Nota: Sobresaliente)</li>
+                        <li><strong>Feb – Abr 2024:</strong> Desarrollo Web con HTML5 y CSS3 (Nota: Sobresaliente)</li>
+                        <li><strong>Mar – Jun 2024:</strong> Experto Universitario en Programación Web Full Stack (Nota: Muy Bueno)</li>
+                        <li class="border-0 pb-1"><strong>Jun 2024 – Ene 2025:</strong> Diplomatura en Professional Backend Developer (Nota: Aprobado)</li>
+                        <li class="ps-3 border-0 py-1">◦ <strong>Jul – Oct 2024:</strong> Módulo: Desarrollo Web con PHP y WordPress (Nota: Sobresaliente)</li>
+                        <li class="ps-3 pt-1">◦ <strong>Oct 2024 – Ene 2025:</strong> Módulo: Programador Web Avanzado (Nota: Muy Bueno)</li>
+                        <li><strong>Feb – May 2025:</strong> Programación en JavaScript y TypeScript (Avanzado) (Nota: Excelente)</li>
+                        <li><strong>Abr – Jun 2025:</strong> PHP y MySQL Intermedio (Nota: Excelente)</li>
+                        <li><strong>Jun – Ago 2025:</strong> PHP y MySQL Avanzado (Nota: Sobresaliente)</li>
+                        <li><strong>Oct – Actualidad:</strong> IA para programadores</li>
+                    </ul> 
+                </section>
 
-            <h2 class="subtitulo fs-3">Conocimientos en: </h2> 
+                <section>
+                    <h2 class="subtitulo fs-3 text-center">Conocimientos en:</h2> 
+                    <ul class="lista list-unstyled">
+                        <li>
+                            <strong>Seguridad de la información - Ethical Hacking:</strong><br>
+                            Gestión de vulnerabilidades
+                        </li>
+                        <li>
+                            <strong>Desarrollo web:</strong><br> 
+                            HTML5, CSS3, JavaScript, Bootstrap, React, Node.js, Express, Npm, PHP,
+                            WordPress, CodeIgniter, API REST, VS Code, Figma, Antigravity
+                        </li> 
+                        <li>
+                            <strong>Bases de datos:</strong><br>
+                            MySQL, MongoDB (básico), SQL Server (básico)
+                        </li>
+                        <li>
+                            <strong>Herramientas y tecnologías adicionales:</strong><br>
+                            Git, GitHub, Netlify, InfinityFree, cPanel, Vercel
+                        </li>
+                    </ul>
+                </section>
 
-            <ul class="lista list-unstyled bg-info fs-6 mt-4">
+                <section>
+                    <p class="text-center text-secondary">Programa Generación T (Streambe)</p>
+                    <ul class="lista list-unstyled">
+                        <li>Full Stack Development</li>
+                    </ul>
+                </section>
 
-                <li>
-                    Seguridad de la información - Ethical Hacking :
-                    Gestión de vulnerabilidades
-                </li>
+                <section>
+                    <h2 class="subtitulo fs-3 text-center mb-4">Proyectos Destacados</h2>
+                    <div class="project-grid">
 
-                <hr>
+                        <article class="project-card">
+                            <img class="vp-img" src="./imagenes/vp-desarrollojs.png"
+                                alt="Vista previa T.P. Final Desarrollo JS">
+                            <div class="project-info text-center">
+                                <a class="project-link" href="https://romanderose-tpfinaldesarrollojs.netlify.app/"
+                                    target="_blank">
+                                    T.P. Final: Desarrollo web con JavaScript
+                                </a>
+                            </div>
+                        </article>
 
-                <li>
-                    Desarrollo web: <br> 
-                    HTML5, CSS3, JavaScript, Bootstrap, React, Node.js, Express, Npm, PHP,
-                    WordPress, CodeIgniter, API REST
-                </li>
+                        <article class="project-card">
+                            <img class="vp-img" src="./imagenes/vp-lader.png" alt="Vista previa Lader">
+                            <div class="project-info text-center">
+                                <a class="project-link"
+                                    href="https://drive.google.com/file/d/1F-35nNi-aIJKMF32sbRsJogOgE6BxEV_/view"
+                                    target="_blank">
+                                    Lader
+                                </a>
+                            </div>
+                        </article>
 
-                <hr>
+                        <article class="project-card">
+                            <img class="vp-img" src="./imagenes/vp-samsung-form.png" alt="Vista previa Samsung Form">
+                            <div class="project-info text-center">
+                                <a class="project-link" href="https://rdr-tpfinal2pwa.netlify.app/" target="_blank">
+                                    Programador web avanzado: T.P. Final 2
+                                </a>
+                            </div>
+                        </article>
 
-                <li>
-                   Herramientas y tecnologías adicionales: <br>
-                   Git, GitHub, VS Code, Netlify, InfinityFree, cPanel
-                </li>
+                        <article class="project-card">
+                            <img class="vp-img" src="./imagenes/vista-previa-typer3000.png"
+                                alt="Vista previa TYPER 3000">
+                            <div class="project-info text-center">
+                                <a class="project-link" href="https://typer3000thegame.netlify.app/" target="_blank">
+                                    TYPER 3000: Jugar (T.P. nro 7 Streambe)
+                                </a>
+                            </div>
+                        </article>
 
-            </ul>
-            
-            <h2 class="subtitulo fs-3">Cursos realizados: en UTN Centro de 
-                E-learning, CABA.
-            </h2>
-
-            <ul class="lista mt-4 list-unstyled bg-info fs-6">
-
-                <li>
-                    Experto Universitario de Seguridad de la Información
-                </li>
-
-                <hr>
-
-                <li>
-                    Módulo complementario para certificar Experto 
-                    Universitario en Hacking Ético (Ethical Hacking)
-                </li>
-
-                <hr>
-
-                <li class="mt-2">
-                    Professional Front-end Developer <br> 
-                    (Desarrollo web con HTML5 y CSS3 + Desarrollo web 
-                    con Javascript + Desarrollo web con HTML5, CSS3 
-                    y <br> Javascript (avanzado) + Desarrollo web con 
-                    Bootstrap)
-                </li> 
-                
-                <hr>
-
-                <li class="mt-2">
-                    Experto Universitario en Programación web Full-stack
-                </li>
-
-                <hr>
-
-                <li class="mt-2">
-                    Professional Backend Developer <br>
-                    (Desarrollo web con Php y WordPress + Programador 
-                    Web Avanzado)
-                </li>
-
-                <hr>
-
-                <li class="mt-2">
-                    Programación en Javascript y Typescript, nivel avanzado.
-                </li>
-
-                <hr>
-
-                <li class="mt-2">
-                    Php y MySql intermedio
-                </li>
-
-                <hr>
-
-                <li class="mt-2">
-                    Php y MySql avanzado
-                </li>
-
-                <hr>
-
-                <li class="mt-2">
-                    IA para programadores
-                </li>
-            </ul> 
-            
-            <h2 class="subtitulo fs-3">
-                En Programa Generación T (Streambe)
-            </h2>
-
-            <ul class="lista mt-4 list-unstyled bg-info fs-6">
-
-                <li>
-                    Full Stack Development
-                </li>
-
-            </ul>
-
-            <h2 class="mb-4 subtitulo fs-3">
-                Estos son algunos de mis proyectos:
-            </h2>
-
-            <div class="bg-success">
-
-                <ul class="lista list-unstyled">
-
-                    <li class="proyecto">
-
-                        <p class="mt-2">
-                        
-                            <img class="vp-img rounded border border-2 
-                            border-dark" 
-                            src="./imagenes/vp-desarrollojs.png" 
-                            alt="Vista previa">
-
-                        </p>    
-                            
-                        <a class="text-light" href="https://romanderose-tpfinaldesarrollojs.netlify.app/"
-                        target="_blank">T.P. Final: Desarrollo web con JavaScript</a>
-                        
-                    </li>
-
-                    <hr>    
-                
-                    <li class="proyecto">
-
-                        <p class="mt-2">
-                        
-                            <img class="vp-img rounded border border-2 
-                            border-dark" 
-                            src="./imagenes/vp-lader.png" 
-                            alt="Vista previa">
-
-                        </p>    
-                            
-                        <a class="text-light" href="https://drive.google.com/file/d/1F-35nNi-aIJKMF32sbRsJogOgE6BxEV_/view"
-                        target="_blank">Lader</a>
-                        
-                    </li>
-
-                    <hr>
-
-                    <li class="proyecto">                        
-                        <img class="vp-img rounded border border-2 border-dark" 
-                        src="./imagenes/vp-samsung-form.png" 
-                        alt="Vista previa">
-                        
-                        <p class="mt-2">
-                            <a class="text-light" href="https://rdr-tpfinal2pwa.netlify.app/"
-                            target="_blank">Programador web avanzado: <br>T.P. Final 2</a>
-                        </p> 
-                    </li>
-
-                    <hr>
-
-                    <li class="proyecto">
-
-                        <p>
-                          <img class="vp-img rounded border border-2 
-                          border-dark" 
-                          src="./imagenes/vista-previa-typer3000.png" 
-                          alt="Vista previa">  
-                        </p>
-                        
-                        <a class="text-light" href="https://typer3000thegame.netlify.app/"
-                        target="_blank">TYPER 3000: Jugar <br>
-                        (T.P. nro 7, Full Stack Development) </a>
-
-                    </li>
-                    
-                </ul> <!--Fin lista proyectos-->
+                    </div>
+                </section>
 
             </div>
-
         </div>
 
     </main>
 
-    <footer class="bg-dark text-light pb-1">
-        
-        <div class="text-center">
-            <h6>Contacto:</h6>
-            
-            <ul class="list-unstyled">
+    <footer class="text-center">
+        <div class="container">
+            <h6 class="mb-4">Contacto:</h6>
 
-                <li class="contacto-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-facebook" viewBox="0 0 16 16">
-                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                    </svg>
+            <div class="row justify-content-center">
+                <div class="col-md-6 d-flex flex-column align-items-center">
 
-                    <a class="text-light" href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61580600707894">
-                        Desarrollador web freelance RDR
-                    </a>
-                </li>
+                    <div class="contacto-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
+                        <a class="text-light text-decoration-none"
+                            href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61580600707894">
+                            Desarrollador web freelance RDR
+                        </a>
+                    </div>
 
-                <li class="contacto-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                    </svg>
+                    <div class="contacto-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                        <a class="text-light text-decoration-none"
+                            href="https://www.instagram.com/desarrolladorwebfreelancerdr/">
+                            @desarrolladorwebfreelancerdr
+                        </a>
+                    </div>
 
-                    <a class="text-light" href="https://www.instagram.com/desarrolladorwebfreelancerdr/">
-                        @desarrolladorwebfreelancerdr
-                    </a>
-                </li>
+                    <div class="contacto-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.06 3.973L0 16l5.053-1.326A7.74 7.74 0 0 0 7.998 16c4.369 0 7.926-3.563 7.93-7.926a7.9 7.9 0 0 0-2.327-5.748M7.994 14.52a6.57 6.57 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                        </svg>
+                        <a class="text-light text-decoration-none" href="https://wa.me/1130712905">
+                            +54 9 11 3071-2905
+                        </a>
+                    </div>
 
-                <li class="contacto-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
-                        <path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"></path><path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"></path><path fill="#cfd8dc" d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"></path><path fill="#40c351" d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"></path><path fill="#fff" fill-rule="evenodd" d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z" clip-rule="evenodd"></path>
-                    </svg>
+                    <div class="contacto-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                        </svg>
+                        <a class="text-light text-decoration-none" href="mailto:romandealdobonzi@gmail.com">
+                            romandealdobonzi@gmail.com
+                        </a>
+                    </div>
 
-                    <a class="text-light" href="https://wa.me/1130712905">
-                        +54 9 11 3071-2905
-                    </a>
-                </li>
-                
-                <li class="contacto-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
-                        <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path><path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path><polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"></polygon><path fill="#c62828" d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"></path><path fill="#fbc02d" d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"></path>
-                    </svg> 
-                    romandealdobonzi@gmail.com
-                </li>
+                </div>
+            </div>
 
-            </ul>
-
-            <p id="parrafo-final" class="mt-3">&copy; Román De Rose</p> 
+            <p id="parrafo-final" class="mt-5">&copy; Román De Rose</p>
         </div>
-
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
