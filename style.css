@@ -61,6 +61,11 @@ header {
     border-bottom: none;
 }
 
+.en-desarrollo-text {
+    margin-top: 25px;
+    margin-bottom: 6px;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -75,6 +80,8 @@ header {
     transition: var(--transition);
     border: 1px solid rgba(255, 255, 255, 0.1);
     height: 100%;
+    width: 70%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
@@ -87,24 +94,25 @@ header {
 
 .vp-img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
 }
 
 .project-info {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-link {
     color: var(--accent-color) !important;
     text-decoration: none;
     font-weight: 600;
-    display: block;
-    margin-top: 1rem;
+    text-align: center;
+    margin: 0;
 }
 
 .project-link:hover {
